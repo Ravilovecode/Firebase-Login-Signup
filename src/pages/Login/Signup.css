@@ -1,46 +1,51 @@
+/* Main container for aligning the signup card in the center of the screen */
 .main-height {
     height: 100vh !important;
 }
- 
-.login-card {
+
+/* Card styling for the signup component */
+.signup-card {
     height: 85vh;
     background-color: white;
 }
- 
-.login-left-card {
+
+/* Left side of the card (form area) */
+.signup-left-card {
     height: 85vh;
 }
- 
+
+/* Padding to center the content vertically */
 .main-content {
     padding-top: 10vh;
 }
- 
-.login-right-card {
-    /* background-color: var(--theme-primary-color); */
+
+/* Right side of the card (informational area) */
+.signup-right-card {
     background-image: url('https://uploads-ssl.webflow.com/612ca2a103cd4b980c51550f/6130a1922af7f304ee17a7ac_team-3.jpg');
     height: 85vh;
     background-size: cover;
     background-position: center;
- 
 }
- 
+
+/* Image fill utility */
 .image-fill {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
- 
+
+/* Divider styling */
 .divider {
     position: relative;
 }
- 
+
 .divider .line {
     height: 1px;
     background-color: gray;
     top: 13px;
     position: relative;
 }
- 
+
 .divider .text {
     position: absolute;
     left: 50%;
@@ -51,7 +56,8 @@
     padding-right: 5px;
     color: gray;
 }
- 
+
+/* Form controls styling */
 .form-control {
     border-top: none !important;
     border-left: none !important;
@@ -59,8 +65,32 @@
     border-radius: 0 !important;
     padding-left: 0 !important;
 }
- 
+
 .form-control:focus {
     border-color: var(--theme-primary-color) !important;
     box-shadow: none !important;
+}
+
+/* Additional CSS specific to signup page */
+/* Example: If you need any additional customization for the signup form */
+.signup-left-card h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.signup-left-card p {
+    color: #666;
+}
+
+.signup-left-card button {
+    background-color: var(--theme-primary-color);
+    border-color: var(--theme-primary-color);
+    color: white;
+    font-size: 1rem;
+}
+
+.signup-left-card button:hover {
+    background-color: darken(var(--theme-primary-color), 10%);
+    border-color: darken(var(--theme-primary-color), 10%);
 }
